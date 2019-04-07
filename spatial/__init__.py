@@ -27,3 +27,5 @@ sub-module.
 from .bounds import Bounds
 from .bounds import Bounds2D
 from .bounds import Bounds3D
+
+from .vector import Vector3

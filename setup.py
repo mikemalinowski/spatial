@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='spatial',
-    version='0.1.0',
+    version='0.2.0',
     author='Mike Malinowski',
     author_email='mike@twisted.space',
     description='A small pure python library for spatial queries, functions and classes',

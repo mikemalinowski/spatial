@@ -71,6 +71,53 @@ inside_point = [1, 1]
 print('Bound contains %s : %s' % (inside_point, bounds.contains(inside_point)))
 ```
 
+# Vector
+
+This class represents a vector which exposes the typically used
+methods of a 3d vector such as cross and dot products as well as 
+length/magnitude.
+    
+```python
+import spatial
+
+# -- Create two vectors
+v1 = spatial.Vector3(1.0, 0.0, 0.0)
+v2 = spatial.Vector3(0.0, 1.0, 0.0)
+
+# -- Calculate the angle between the two vectors
+v1.angle(v2)
+```
+
+The Vector supports basic in-place operations such as 
+Add, Subtract, Multiply and Divide.
+    
+```python
+import spatial
+
+# -- Create two vectors
+v1 = spatial.Vector3(1.0, 2.0, 3.0)
+v2 = spatial.Vector3(1.0, 2.0, 3.0)
+
+# -- Add the two vectors
+print(v1 + v2)
+
+# -- Subtract the two vectors
+print(v1 - v2)
+
+# -- Multiply the two vectors
+print(v1 * v2)
+
+# -- Divide the two vectos
+print(v1 / v2)
+```  
+
+Gives:
+    
+    Vector3(2.0, 4.0, 6.0)
+    Vector3(0.0, 0.0, 0.0)
+    Vector3(1.0, 4.0, 9.0)
+    Vector3(1.0, 1.0, 1.0)
+
 ## Credits & Collaboration
 
 
